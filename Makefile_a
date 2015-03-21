@@ -1,0 +1,8 @@
+build   :
+	g++ -c -std=c++0x -g -Wall -O1 -pipe -fPIC -Dnullptr=0 -I./ -o markup.o markup.cpp
+	ar -rv libcmarkup.a markup.o
+
+clean   :
+	rm *.a *.o *.so
+
+rebuild : clean build

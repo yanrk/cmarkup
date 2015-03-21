@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cmarkup", "cmarkup.vcxproj", "{F9E70D62-B8B2-426E-BA32-ECC6ACCCD5DA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		dll_debug|Win32 = dll_debug|Win32
+		dll_release|Win32 = dll_release|Win32
+		lib_debug|Win32 = lib_debug|Win32
+		lib_release|Win32 = lib_release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F9E70D62-B8B2-426E-BA32-ECC6ACCCD5DA}.dll_debug|Win32.ActiveCfg = dll_debug|Win32
+		{F9E70D62-B8B2-426E-BA32-ECC6ACCCD5DA}.dll_debug|Win32.Build.0 = dll_debug|Win32
+		{F9E70D62-B8B2-426E-BA32-ECC6ACCCD5DA}.dll_release|Win32.ActiveCfg = dll_release|Win32
+		{F9E70D62-B8B2-426E-BA32-ECC6ACCCD5DA}.dll_release|Win32.Build.0 = dll_release|Win32
+		{F9E70D62-B8B2-426E-BA32-ECC6ACCCD5DA}.lib_debug|Win32.ActiveCfg = lib_debug|Win32
+		{F9E70D62-B8B2-426E-BA32-ECC6ACCCD5DA}.lib_debug|Win32.Build.0 = lib_debug|Win32
+		{F9E70D62-B8B2-426E-BA32-ECC6ACCCD5DA}.lib_release|Win32.ActiveCfg = lib_release|Win32
+		{F9E70D62-B8B2-426E-BA32-ECC6ACCCD5DA}.lib_release|Win32.Build.0 = lib_release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
