@@ -434,7 +434,7 @@ const char* TextEncoding::IConvName( char* szEncoding, MCD_CSTR pszEncoding )
 		szEncoding[nEncChar] = (cEncChar>='a' && cEncChar<='z')? (cEncChar-('a'-'A')) : cEncChar;
 		++nEncChar;
 	}
-	if ( nEncChar == 6 && x_StrNCmp(szEncoding,"UTF-16",6) == 0 )
+	if ( nEncChar == 6 && strncmp(szEncoding,"UTF-16",6) == 0 )
 	{
 		szEncoding[nEncChar++] = 'B';
 		szEncoding[nEncChar++] = 'E';
@@ -1519,7 +1519,7 @@ bool FilePos::FileErrorAddResult()
 #endif
 #else // no C error routine, use Windows API
 	DWORD dwErr = ::GetLastError();
-	if ( ::FormatMessage(0x1200,0,dwErr,0,szError,nErrorBufferSize,0) < 1 )
+	if ( ::FormatMessageW(0x1200,0,dwErr,0,szError,nErrorBufferSize,0) < 1 )
 		szError[0] = '\0';
 	nErr = (int)dwErr;
 #endif // no C error routine

@@ -1,6 +1,6 @@
 build   :
-	g++ -c -std=c++0x -g -Wall -O1 -pipe -fPIC -Dnullptr=0 -I./ -o markup.o markup.cpp
-	g++ -shared -o libcmarkup.so markup.o
+	g++ -c -std=c++11 -g -Wall -O1 -pipe -fPIC -I./ -o markup.o markup.cpp
+	g++ -shared -o libcmarkup.so markup.o -liconv
 
 clean   :
 	rm *.a *.o *.so
